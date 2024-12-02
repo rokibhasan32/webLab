@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Tracking</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f3f4f6;
+            color: #333;
+        }
+
+        header {
+            background-color: #27e586;
+            color: white;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .container h2 {
+            text-align: center;
+            color: #27e586;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .form-group input {
+            width: calc(100% - 20px);
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 1rem;
+        }
+
+        .btn-submit {
+            background-color: #27e586;
+            color: white;
+            padding: 12px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .btn-submit:hover {
+            background-color: #1f9c61;
+        }
+
+        .tracking-info {
+            margin-top: 20px;
+            font-size: 1rem;
+        }
+
+        .tracking-info p {
+            line-height: 1.6;
+        }
+
+        .tracking-info .status {
+            color: #27e586;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Track Your Order</h1>
+    </header>
+
+    <div class="container">
+        <h2>Enter Your Order ID</h2>
+        <form id="trackingForm">
+            <div class="form-group">
+                <label for="orderId">Order ID</label>
+                <input type="text" id="orderId" name="orderId" placeholder="Enter your order ID" required>
+            </div>
+            <button type="submit" class="btn-submit">Track Order</button>
+        </form>
+
+        <div id="trackingInfo" class="tracking-info" style="display: none;">
+            <h3>Order Status</h3>
+            <p><strong>Order ID:</strong> <span id="orderIdResult"></span></p>
+            <p><strong>Status:</strong> <span id="orderStatus" class="status"></span></p>
+            <p><strong>Estimated Delivery:</strong> <span id="estimatedDelivery"></span></p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('trackingForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const orderId = document.getElementById('orderId').value;
+            document.getElementById('orderIdResult').textContent = orderId;
+            document.getElementById('orderStatus').textContent = 'Shipped';
+            document.getElementById('estimatedDelivery').textContent = '3-5 business days';
+
+            document.getElementById('trackingInfo').style.display = 'block';
+        });
+    </script>
+</body>
+
+</html>

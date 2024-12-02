@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicine Request</title>
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f3f4f6;
+            color: #333;
+        }
+
+        header {
+            background-color: #e8eeeb;
+            color: rgb(12, 199, 90);
+            padding: 1.5rem 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        /* Container Styles */
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .container h2 {
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+            color: #27e550;
+            text-align: center;
+        }
+
+        /* Form Styles */
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: calc(100% - 20px);
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 1rem;
+            height: 50px;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .form-group textarea {
+            height: 120px;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            border-color: #27e586;
+            box-shadow: 0 0 6px rgba(39, 229, 134, 0.3);
+            outline: none;
+        }
+
+        .form-group input[type="file"] {
+            padding: 8px;
+            border: 2px dashed #ddd;
+            background-color: #f9f9f9;
+            height: auto;
+        }
+
+        .form-group input[type="file"]:hover {
+            border-color: #27e586;
+        }
+
+        /* Submit Button */
+        .btn-submit {
+            background-color: #27e586;
+            color: white;
+            border: none;
+            padding: 12px;
+            font-size: 1rem;
+            border-radius: 6px;
+            cursor: pointer;
+            width: calc(100% - 20px);
+            height: 50px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-submit:hover {
+            background-color: #1f9c61;
+        }
+
+        /* Success Message */
+        .success-message {
+            text-align: center;
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #e0ffe5;
+            border: 1px solid #27e586;
+            color: #27a557;
+            border-radius: 6px;
+        }
+
+        /* Media Queries */
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+
+            .btn-submit {
+                font-size: 0.9rem;
+                height: 45px;
+            }
+
+            .form-group input,
+            .form-group textarea {
+                height: 45px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Medicine Request</h1>
+    </header>
+
+    <div class="container">
+        <h2>Request a Medicine</h2>
+        <form id="medicineRequestForm">
+            <div class="form-group">
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group">
+                <label for="contactInfo">Contact Information</label>
+                <input type="text" id="contactInfo" name="contactInfo" placeholder="Enter your phone or email" required>
+            </div>
+            <div class="form-group">
+                <label for="medicineName">Medicine Name</label>
+                <input type="text" id="medicineName" name="medicineName" placeholder="Enter the medicine name" required>
+            </div>
+            <div class="form-group">
+                <label for="medicineDetails">Additional Details</label>
+                <textarea id="medicineDetails" name="medicineDetails"
+                    placeholder="Provide additional information about the medicine (e.g., dosage, brand preference, etc.)"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="medicineImage">Upload Medicine Picture (Optional)</label>
+                <input type="file" id="medicineImage" name="medicineImage" accept="image/*">
+            </div>
+            <button type="submit" class="btn-submit">Submit Request</button>
+        </form>
+        <div id="successMessage" class="success-message" style="display: none;">
+            Your medicine request has been submitted successfully!
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('medicineRequestForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+
+            const fullName = document.getElementById('fullName').value;
+            const contactInfo = document.getElementById('contactInfo').value;
+            const medicineName = document.getElementById('medicineName').value;
+
+
+            alert(`Thank you, ${fullName}! Your request for ${medicineName} has been submitted. We will contact you at ${contactInfo}.`);
+
+
+            this.style.display = 'none';
+
+
+            document.getElementById('successMessage').style.display = 'block';
+        });
+    </script>
+</body>
+
+</html>

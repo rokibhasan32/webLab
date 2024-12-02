@@ -1,0 +1,1154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediCart</title>
+    <link rel="icon" type="image/x-icon" href="/images/logo.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="./images/Summer 1.png" type="image/x-icon">
+    <link rel="stylesheet" href="index.css">
+    <style>
+        .btn-primary {
+            background-color: #27e586;
+        }
+
+        .header-background {
+            background-color: #F9F6E2;
+        }
+
+        .card-background-color {
+            border-radius: 8px;
+            background-color: rgba(17, 17, 17, 0.05);
+        }
+    </style>
+</head>
+
+<body class="bg-white">
+    <!-- -------------------Header section--------------- -->
+    <header class="bg-white shadow-sm fixed w-full z-10">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <img src="/images/logo.jpg" alt="MediCart Logo" class="w-10 h-10">
+                <h1 class="text-2xl font-bold text-green-600">MediCart</h1>
+            </div>
+            <nav class="hidden md:flex space-x-6">
+                <a href="medicine-request.html"
+                    class="text-gray-600 hover:text-green-600 transition duration-300">Medicine Request</a>
+                <a href="prescription.html"
+                    class="text-gray-600 hover:text-green-600 transition duration-300">Prescription</a>
+                <a href="#join" class="text-gray-600 hover:text-green-600 transition duration-300">Join Us</a>
+            </nav>
+            <div class="flex items-center gap-4">
+                <a href="login.html" class="text-green-600 hover:text-green-700 transition duration-300">Log In</a>
+                <a href="sign-up.html"
+                    class="bg-green-600 text-white px-4 py-2 rounded-full hover:bg-green-700 transition duration-300">Sign
+                    Up</a>
+            </div>
+        </div>
+    </header>
+    <header class="grid grid-cols-1 lg:grid-cols-2 header-background">
+        <div class=" flex justify-center items-center text-center order-2 lg:order-1">
+            <div class="text-black ">
+                <h2 class="text-lg font-medium mb-6">---SALE FEVER---</h2>
+                <h1 class="text-3xl lg:text-5xl uppercase font-bold mb-10 lg:mb-14">Purchase TK 200 or<br>above & get
+                    <span class="text-[#27e58c]">20% off</span>
+                </h1>
+                <div class="mb-5">
+                    <p class="inline font-semibold mr-3">Use Promo Code</p>
+                    <button class="btn-primary text-white border-none py-2 px-6 rounded-lg">SELL200</button>
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-center items-center order-1 lg:order-2">
+            <img class="lg:w-9/12 md:w-1/2" src="images/main logo.jpg" alt="logo">
+        </div>
+    </header>
+    <!------------------------------------- Main section------------------- -->
+    <main class="mx-10 lg:mx-60">
+        <!----------------------------------------All Card section ------------------------------------->
+        <section class="grid grid-cols-1 lg:flex gap-10 mt-28">
+            <section class="justify-center ">
+                <!-------------------------------------Section:1 Tablets section ----------------------------------->
+                <h1 class="text-black text-center text-3xl lg:text-4xl font-semibold mb-10 lg:w-1/5">Tablets</h1>
+                <section
+                    class="grid grid-cols-1 justify-items-center gap-4 md:grid-cols-2 md:gap-6 lg:grid-cols-5 lg:gap-8">
+                    <!-- card number 1 -->
+                    <div>
+                        <div onclick="On_Click('card-name-1','card-price-1')"
+                            class="card w-80 h-80 shadow-xl text-center cursor-pointer">
+                            <figure class="card-background-color w-72 h-48 m-4 rounded-sm"><img class="p-4"
+                                    src="/images/napa.jpg" alt="napa" /></figure>
+                            <div class="rating rating-md justify-center">
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <div class="card-bodytext">
+                                <h2 id="card-name-1" class="text-xl text-black font-medium">Napa</h2>
+                                <p><span id="card-price-1">200.00</span> TK</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card number 2 -->
+                    <div>
+                        <div onclick="On_Click('card-name-2','card-price-2')"
+                            class="card w-80 h-80  shadow-xl text-center cursor-pointer">
+                            <figure class="card-background-color w-72 h-48 m-4 rounded-sm"><img class="p-4"
+                                    src="/images/DISPRIN.jpg" alt="DISPRIN" /></figure>
+                            <div class="rating rating-md justify-center">
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <div class="card-bodytext">
+                                <h2 id="card-name-2" class="text-xl text-black font-medium">Disprin</h2>
+                                <p><span id="card-price-2">250.00</span> TK</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card number 3 -->
+                    <div>
+                        <div onclick="On_Click('card-name-3','card-price-3')"
+                            class="card w-80 h-80  shadow-xl text-center cursor-pointer">
+                            <figure class="card-background-color w-72 h-48 m-4 rounded-sm"><img class="p-4"
+                                    src="/images/LLevofox.jpg" alt="logo" /></figure>
+                            <div class="rating rating-md justify-center">
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <div class="card-bodytext">
+                                <h2 id="card-name-3" class="text-xl text-black font-medium">Levofox</h2>
+                                <p><span id="card-price-3">500.00</span> TK</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card number 4 -->
+                    <div>
+                        <div onclick="On_Click('card-name-3','card-price-3')"
+                            class="card w-80 h-80  shadow-xl text-center cursor-pointer">
+                            <figure class="card-background-color w-72 h-48 m-4 rounded-sm"><img class="p-4"
+                                    src="/images/IRON COMPLEx.jpg" alt="logo" /></figure>
+                            <div class="rating rating-md justify-center">
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <div class="card-bodytext">
+                                <h2 id="card-name-3" class="text-xl text-black font-medium">Iron Complex</h2>
+                                <p><span id="card-price-3">400.00</span> TK</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card number 5 -->
+                    <div>
+                        <div onclick="On_Click('card-name-3','card-price-3')"
+                            class="card w-80 h-80  shadow-xl text-center cursor-pointer">
+                            <figure class="card-background-color w-72 h-48 m-4 rounded-sm"><img class="p-4"
+                                    src="/images/Nutraflex.jpg" alt="logo" /></figure>
+                            <div class="rating rating-md justify-center">
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <div class="card-bodytext">
+                                <h2 id="card-name-3" class="text-xl text-black font-medium">Nutraflex</h2>
+                                <p><span id="card-price-3">300.00</span> TK</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card number 6 -->
+                    <div>
+                        <div onclick="On_Click('card-name-3','card-price-3')"
+                            class="card w-80 h-80  shadow-xl text-center cursor-pointer">
+                            <figure class="card-background-color w-72 h-48 m-4 rounded-sm"><img class="p-4"
+                                    src="/images/TRox forte.jpg" alt="logo" /></figure>
+                            <div class="rating rating-md justify-center">
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <div class="card-bodytext">
+                                <h2 id="card-name-3" class="text-xl text-black font-medium">Trox Forte</h2>
+                                <p><span id="card-price-3">600.00</span> TK</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card number 7 -->
+                    <div>
+                        <div onclick="On_Click('card-name-3','card-price-3')"
+                            class="card w-80 h-80  shadow-xl text-center cursor-pointer">
+                            <figure class="card-background-color w-72 h-48 m-4 rounded-sm"><img class="p-4"
+                                    src="/images/7Bilastin.png" alt="logo" /></figure>
+                            <div class="rating rating-md justify-center">
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <div class="card-bodytext">
+                                <h2 id="card-name-3" class="text-xl text-black font-medium">Bilastin</h2>
+                                <p><span id="card-price-3">200.00</span> TK</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card number 8 -->
+                    <div>
+                        <div onclick="On_Click('card-name-3','card-price-3')"
+                            class="card w-80 h-80  shadow-xl text-center cursor-pointer">
+                            <figure class="card-background-color w-72 h-48 m-4 rounded-sm"><img class="p-4"
+                                    src="/images/8Finorex.jpg" alt="logo" /></figure>
+                            <div class="rating rating-md justify-center">
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <div class="card-bodytext">
+                                <h2 id="card-name-3" class="text-xl text-black font-medium">Finorex</h2>
+                                <p><span id="card-price-3">170.00</span> TK</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card number 9 -->
+                    <div>
+                        <div onclick="On_Click('card-name-3','card-price-3')"
+                            class="card w-80 h-80  shadow-xl text-center cursor-pointer">
+                            <figure class="card-background-color w-72 h-48 m-4 rounded-sm"><img class="p-4"
+                                    src="/images/9Bilan.jpg" alt="logo" /></figure>
+                            <div class="rating rating-md justify-center">
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <div class="card-bodytext">
+                                <h2 id="card-name-3" class="text-xl text-black font-medium">Bilan</h2>
+                                <p><span id="card-price-3">50.00</span> TK</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card number 10 -->
+                    <div>
+                        <div onclick="On_Click('card-name-3','card-price-3')"
+                            class="card w-80 h-80  shadow-xl text-center cursor-pointer">
+                            <figure class="card-background-color w-72 h-48 m-4 rounded-sm"><img class="p-4"
+                                    src="/images/10Nexum.jpg" alt="logo" /></figure>
+                            <div class="rating rating-md justify-center">
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <div class="card-bodytext">
+                                <h2 id="card-name-3" class="text-xl text-black font-medium">Nexum</h2>
+                                <p><span id="card-price-3">400.00</span> TK</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card number 11 -->
+                    <div>
+                        <div onclick="On_Click('card-name-3','card-price-3')"
+                            class="card w-80 h-80  shadow-xl text-center cursor-pointer">
+                            <figure class="card-background-color w-72 h-48 m-4 rounded-sm"><img class="p-4"
+                                    src="/images/11Bizoran.jpg" alt="logo" /></figure>
+                            <div class="rating rating-md justify-center">
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <div class="card-bodytext">
+                                <h2 id="card-name-3" class="text-xl text-black font-medium">Bizoran</h2>
+                                <p><span id="card-price-3">60.00</span> TK</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card number 12 -->
+                    <div>
+                        <div onclick="On_Click('card-name-3','card-price-3')"
+                            class="card w-80 h-80  shadow-xl text-center cursor-pointer">
+                            <figure class="card-background-color w-72 h-48 m-4 rounded-sm"><img class="p-4"
+                                    src="/images/12Bilamin.jpg" alt="logo" /></figure>
+                            <div class="rating rating-md justify-center">
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <div class="card-bodytext">
+                                <h2 id="card-name-3" class="text-xl text-black font-medium">Bilamin</h2>
+                                <p><span id="card-price-3">79.00</span> TK</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card number 13 -->
+                    <div>
+                        <div onclick="On_Click('card-name-3','card-price-3')"
+                            class="card w-80 h-80  shadow-xl text-center cursor-pointer">
+                            <figure class="card-background-color w-72 h-48 m-4 rounded-sm"><img class="p-4"
+                                    src="/images/14Olmenor.jpg" alt="logo" /></figure>
+                            <div class="rating rating-md justify-center">
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <div class="card-bodytext">
+                                <h2 id="card-name-3" class="text-xl text-black font-medium">Olmenor</h2>
+                                <p><span id="card-price-3">90.00</span> TK</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card number 14 -->
+                    <div>
+                        <div onclick="On_Click('card-name-3','card-price-3')"
+                            class="card w-80 h-80  shadow-xl text-center cursor-pointer">
+                            <figure class="card-background-color w-72 h-48 m-4 rounded-sm"><img class="p-4"
+                                    src="/images/14Olmesan Plus.jpg" alt="logo" /></figure>
+                            <div class="rating rating-md justify-center">
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <div class="card-bodytext">
+                                <h2 id="card-name-3" class="text-xl text-black font-medium">Olmesan Plus</h2>
+                                <p><span id="card-price-3">600.00</span> TK</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card number 15 -->
+                    <div>
+                        <div onclick="On_Click('card-name-3','card-price-3')"
+                            class="card w-80 h-80  shadow-xl text-center cursor-pointer">
+                            <figure class="card-background-color w-72 h-48 m-4 rounded-sm"><img class="p-4"
+                                    src="/images/15Rabe.jpg" alt="logo" /></figure>
+                            <div class="rating rating-md justify-center">
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <div class="card-bodytext">
+                                <h2 id="card-name-3" class="text-xl text-black font-medium">Rabe</h2>
+                                <p><span id="card-price-3">80.00</span> TK</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card number 16 -->
+                    <div>
+                        <div onclick="On_Click('card-name-3','card-price-3')"
+                            class="card w-80 h-80  shadow-xl text-center cursor-pointer">
+                            <figure class="card-background-color w-72 h-48 m-4 rounded-sm"><img class="p-4"
+                                    src="/images/16Emep Mups.jpg" alt="logo" /></figure>
+                            <div class="rating rating-md justify-center">
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <div class="card-bodytext">
+                                <h2 id="card-name-3" class="text-xl text-black font-medium">Emep Mups</h2>
+                                <p><span id="card-price-3">74.00</span> TK</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card number 17 -->
+                    <div>
+                        <div onclick="On_Click('card-name-3','card-price-3')"
+                            class="card w-80 h-80  shadow-xl text-center cursor-pointer">
+                            <figure class="card-background-color w-72 h-48 m-4 rounded-sm"><img class="p-4"
+                                    src="/images/17Rosuvastatin.jpg" alt="logo" /></figure>
+                            <div class="rating rating-md justify-center">
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <div class="card-bodytext">
+                                <h2 id="card-name-3" class="text-xl text-black font-medium">Rosuvastatin</h2>
+                                <p><span id="card-price-3">800.00</span> TK</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card number 18 -->
+                    <div>
+                        <div onclick="On_Click('card-name-3','card-price-3')"
+                            class="card w-80 h-80  shadow-xl text-center cursor-pointer">
+                            <figure class="card-background-color w-72 h-48 m-4 rounded-sm"><img class="p-4"
+                                    src="/images/18Cortan.jpg" alt="logo" /></figure>
+                            <div class="rating rating-md justify-center">
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <div class="card-bodytext">
+                                <h2 id="card-name-3" class="text-xl text-black font-medium">Cortan</h2>
+                                <p><span id="card-price-3">400.00</span> TK</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card number 19 -->
+                    <div>
+                        <div onclick="On_Click('card-name-3','card-price-3')"
+                            class="card w-80 h-80  shadow-xl text-center cursor-pointer">
+                            <figure class="card-background-color w-72 h-48 m-4 rounded-sm"><img class="p-4"
+                                    src="/images/19Taven.jpg" alt="logo" /></figure>
+                            <div class="rating rating-md justify-center">
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <div class="card-bodytext">
+                                <h2 id="card-name-3" class="text-xl text-black font-medium">Taven</h2>
+                                <p><span id="card-price-3">200.00</span> TK</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card number 20 -->
+                    <div>
+                        <div onclick="On_Click('card-name-3','card-price-3')"
+                            class="card w-80 h-80  shadow-xl text-center cursor-pointer">
+                            <figure class="card-background-color w-72 h-48 m-4 rounded-sm"><img class="p-4"
+                                    src="/images/20Rexiet.jpg" alt="logo" /></figure>
+                            <div class="rating rating-md justify-center">
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <div class="card-bodytext">
+                                <h2 id="card-name-3" class="text-xl text-black font-medium">Rexiet</h2>
+                                <p><span id="card-price-3">700.00</span> TK</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card number 21 -->
+                    <div>
+                        <div onclick="On_Click('card-name-3','card-price-3')"
+                            class="card w-80 h-80  shadow-xl text-center cursor-pointer">
+                            <figure class="card-background-color w-72 h-48 m-4 rounded-sm"><img class="p-4"
+                                    src="/images/21Intimate.jpg" alt="logo" /></figure>
+                            <div class="rating rating-md justify-center">
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <div class="card-bodytext">
+                                <h2 id="card-name-3" class="text-xl text-black font-medium">Intimate</h2>
+                                <p><span id="card-price-3">100.00</span> TK</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card number 22 -->
+                    <div>
+                        <div onclick="On_Click('card-name-3','card-price-3')"
+                            class="card w-80 h-80  shadow-xl text-center cursor-pointer">
+                            <figure class="card-background-color w-72 h-48 m-4 rounded-sm"><img class="p-4"
+                                    src="/images/22Bonigen.jpg" alt="logo" /></figure>
+                            <div class="rating rating-md justify-center">
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <div class="card-bodytext">
+                                <h2 id="card-name-3" class="text-xl text-black font-medium">Bonigen</h2>
+                                <p><span id="card-price-3">50.00</span> TK</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card number 23 -->
+                    <div>
+                        <div onclick="On_Click('card-name-3','card-price-3')"
+                            class="card w-80 h-80  shadow-xl text-center cursor-pointer">
+                            <figure class="card-background-color w-72 h-48 m-4 rounded-sm"><img class="p-4"
+                                    src="/images/23Bilxen.jpg" alt="logo" /></figure>
+                            <div class="rating rating-md justify-center">
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <div class="card-bodytext">
+                                <h2 id="card-name-3" class="text-xl text-black font-medium">Bilxen</h2>
+                                <p><span id="card-price-3">70.00</span> TK</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card number 24 -->
+                    <div>
+                        <div onclick="On_Click('card-name-3','card-price-3')"
+                            class="card w-80 h-80  shadow-xl text-center cursor-pointer">
+                            <figure class="card-background-color w-72 h-48 m-4 rounded-sm"><img class="p-4"
+                                    src="/images/24Vonopa.jpg" alt="logo" /></figure>
+                            <div class="rating rating-md justify-center">
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <div class="card-bodytext">
+                                <h2 id="card-name-3" class="text-xl text-black font-medium">Vonopa</h2>
+                                <p><span id="card-price-3">90.00</span> TK</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card number 25 -->
+                    <div>
+                        <div onclick="On_Click('card-name-3','card-price-3')"
+                            class="card w-80 h-80  shadow-xl text-center cursor-pointer">
+                            <figure class="card-background-color w-72 h-48 m-4 rounded-sm"><img class="p-4"
+                                    src="/images/25Nexum Mups.jpg" alt="Nexum Mups" /></figure>
+                            <div class="rating rating-md justify-center">
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <div class="card-bodytext">
+                                <h2 id="card-name-3" class="text-xl text-black font-medium">Nexum Mups</h2>
+                                <p><span id="card-price-3">80.00</span> TK</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-------------------------------------Section:2 Liquid section ---------------------->
+                <h1 class="text-black text-3xl text-center lg:text-4xl font-semibold mt-20 mb-10 lg:w-1/5">Liquid
+                </h1>
+                <section
+                    class="grid grid-cols-1 justify-items-center gap-4 md:grid-cols-2 md:gap-6 lg:grid-cols-5 lg:gap-8">
+                    <!-- card number 1 -->
+                    <div>
+                        <div onclick="On_Click('card-name-4','card-price-4')"
+                            class="card w-80 h-80 shadow-xl text-center cursor-pointer">
+                            <figure class="card-background-color w-72 h-48 m-4 rounded-sm"><img class="p-4"
+                                    src="/images/l1Nesifin.jpg" alt="Nesifin" /></figure>
+                            <div class="rating rating-md justify-center">
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <div class="card-bodytext">
+                                <h2 id="card-name-4" class="text-xl text-black font-medium">Nesifin</h2>
+                                <p><span id="card-price-4">160.00</span> TK</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card number 2 -->
+                    <div>
+                        <div onclick="On_Click('card-name-5','card-price-5')"
+                            class="card w-80 h-80 shadow-xl text-center cursor-pointer">
+                            <figure class="card-background-color w-72 h-48 m-4 rounded-sm"><img class="p-4"
+                                    src="/images/l2Sucrasol.jpg" alt="Sucrasol" /></figure>
+                            <div class="rating rating-md justify-center">
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <div class="card-bodytext">
+                                <h2 id="card-name-5" class="text-xl text-black font-medium">Sucrasol</h2>
+                                <p><span id="card-price-5">95.00</span> TK</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card number 3 -->
+                    <div>
+                        <div onclick="On_Click('card-name-5','card-price-5')"
+                            class="card w-80 h-80 shadow-xl text-center cursor-pointer">
+                            <figure class="card-background-color w-72 h-48 m-4 rounded-sm"><img class="p-4"
+                                    src="/images/l3DILUTION.jpg" alt="DILUTION" /></figure>
+                            <div class="rating rating-md justify-center">
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <div class="card-bodytext">
+                                <h2 id="card-name-5" class="text-xl text-black font-medium">DILUTION</h2>
+                                <p><span id="card-price-5">85.00</span> TK</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card number 4 -->
+                    <div>
+                        <div onclick="On_Click('card-name-5','card-price-5')"
+                            class="card w-80 h-80 shadow-xl text-center cursor-pointer">
+                            <figure class="card-background-color w-72 h-48 m-4 rounded-sm"><img class="p-4"
+                                    src="/images/l4Melphin.jpg" alt="Melphin" /></figure>
+                            <div class="rating rating-md justify-center">
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <div class="card-bodytext">
+                                <h2 id="card-name-5" class="text-xl text-black font-medium">Melphin</h2>
+                                <p><span id="card-price-5">79.00</span> TK</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card number 5 -->
+                    <div>
+                        <div onclick="On_Click('card-name-5','card-price-5')"
+                            class="card w-80 h-80 shadow-xl text-center cursor-pointer">
+                            <figure class="card-background-color w-72 h-48 m-4 rounded-sm"><img class="p-4"
+                                    src="/images/l5Cortan.jpg" alt="Cortan" /></figure>
+                            <div class="rating rating-md justify-center">
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <div class="card-bodytext">
+                                <h2 id="card-name-5" class="text-xl text-black font-medium">Cortan</h2>
+                                <p><span id="card-price-5">65.00</span> TK</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card number 6 -->
+                    <div>
+                        <div onclick="On_Click('card-name-5','card-price-5')"
+                            class="card w-80 h-80 shadow-xl text-center cursor-pointer">
+                            <figure class="card-background-color w-72 h-48 m-4 rounded-sm"><img class="p-4"
+                                    src="/images/l6Metagenics.jpg" alt="Metagenics" /></figure>
+                            <div class="rating rating-md justify-center">
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <div class="card-bodytext">
+                                <h2 id="card-name-5" class="text-xl text-black font-medium">Metagenics</h2>
+                                <p><span id="card-price-5">165.00</span> TK</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card number 7 -->
+                    <div>
+                        <div onclick="On_Click('card-name-5','card-price-5')"
+                            class="card w-80 h-80 shadow-xl text-center cursor-pointer">
+                            <figure class="card-background-color w-72 h-48 m-4 rounded-sm"><img class="p-4"
+                                    src="/images/l7E-Sel.jpg" alt="E-Sel" /></figure>
+                            <div class="rating rating-md justify-center">
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <div class="card-bodytext">
+                                <h2 id="card-name-5" class="text-xl text-black font-medium">E-Sel</h2>
+                                <p><span id="card-price-5">125.00</span> TK</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card number 8 -->
+                    <div>
+                        <div onclick="On_Click('card-name-5','card-price-5')"
+                            class="card w-80 h-80 shadow-xl text-center cursor-pointer">
+                            <figure class="card-background-color w-72 h-48 m-4 rounded-sm"><img class="p-4"
+                                    src="/images/l8VITAMAX.jpg" alt="VITAMAX" /></figure>
+                            <div class="rating rating-md justify-center">
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <div class="card-bodytext">
+                                <h2 id="card-name-5" class="text-xl text-black font-medium">VITAMAX</h2>
+                                <p><span id="card-price-5">145.00</span> TK</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card number 9 -->
+                    <div>
+                        <div onclick="On_Click('card-name-5','card-price-5')"
+                            class="card w-80 h-80 shadow-xl text-center cursor-pointer">
+                            <figure class="card-background-color w-72 h-48 m-4 rounded-sm"><img class="p-4"
+                                    src="/images/l9Glucofactor.jpg" alt="Glucofactor" /></figure>
+                            <div class="rating rating-md justify-center">
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <div class="card-bodytext">
+                                <h2 id="card-name-5" class="text-xl text-black font-medium">Glucofactor</h2>
+                                <p><span id="card-price-5">135.00</span> TK</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card number 10 -->
+                    <div>
+                        <div onclick="On_Click('card-name-5','card-price-5')"
+                            class="card w-80 h-80 shadow-xl text-center cursor-pointer">
+                            <figure class="card-background-color w-72 h-48 m-4 rounded-sm"><img class="p-4"
+                                    src="/images/l10Urokool.jpg" alt="Urokool" /></figure>
+                            <div class="rating rating-md justify-center">
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <div class="card-bodytext">
+                                <h2 id="card-name-5" class="text-xl text-black font-medium">Urokool</h2>
+                                <p><span id="card-price-5">85.00</span> TK</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card number 11 -->
+                    <div>
+                        <div onclick="On_Click('card-name-5','card-price-5')"
+                            class="card w-80 h-80 shadow-xl text-center cursor-pointer">
+                            <figure class="card-background-color w-72 h-48 m-4 rounded-sm"><img class="p-4"
+                                    src="/images/l11Antazol.jpg" alt="Antazol" /></figure>
+                            <div class="rating rating-md justify-center">
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <div class="card-bodytext">
+                                <h2 id="card-name-5" class="text-xl text-black font-medium">Antazol</h2>
+                                <p><span id="card-price-5">155.00</span> TK</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card number 12 -->
+                    <div>
+                        <div onclick="On_Click('card-name-5','card-price-5')"
+                            class="card w-80 h-80 shadow-xl text-center cursor-pointer">
+                            <figure class="card-background-color w-72 h-48 m-4 rounded-sm"><img class="p-4"
+                                    src="/images/l12Ulrif.jpg" alt="Ulrif" /></figure>
+                            <div class="rating rating-md justify-center">
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <div class="card-bodytext">
+                                <h2 id="card-name-5" class="text-xl text-black font-medium">Ulrif</h2>
+                                <p><span id="card-price-5">195.00</span> TK</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card number 13 -->
+                    <div>
+                        <div onclick="On_Click('card-name-5','card-price-5')"
+                            class="card w-80 h-80 shadow-xl text-center cursor-pointer">
+                            <figure class="card-background-color w-72 h-48 m-4 rounded-sm"><img class="p-4"
+                                    src="/images/l13Avolac.jpg" alt="Avolac" /></figure>
+                            <div class="rating rating-md justify-center">
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <div class="card-bodytext">
+                                <h2 id="card-name-5" class="text-xl text-black font-medium">Avolac</h2>
+                                <p><span id="card-price-5">105.00</span> TK</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card number 14 -->
+                    <div>
+                        <div onclick="On_Click('card-name-5','card-price-5')"
+                            class="card w-80 h-80 shadow-xl text-center cursor-pointer">
+                            <figure class="card-background-color w-72 h-48 m-4 rounded-sm"><img class="p-4"
+                                    src="/images/l14Napa.jpg" alt="Napa" /></figure>
+                            <div class="rating rating-md justify-center">
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <div class="card-bodytext">
+                                <h2 id="card-name-5" class="text-xl text-black font-medium">Napa</h2>
+                                <p><span id="card-price-5">125.00</span> TK</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card number 15 -->
+                    <div>
+                        <div onclick="On_Click('card-name-5','card-price-5')"
+                            class="card w-80 h-80 shadow-xl text-center cursor-pointer">
+                            <figure class="card-background-color w-72 h-48 m-4 rounded-sm"><img class="p-4"
+                                    src="/images/l15SAFI.jpg" alt="SAFI" /></figure>
+                            <div class="rating rating-md justify-center">
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <div class="card-bodytext">
+                                <h2 id="card-name-5" class="text-xl text-black font-medium">SAFI</h2>
+                                <p><span id="card-price-5">155.00</span> TK</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card number 16 -->
+                    <div>
+                        <div onclick="On_Click('card-name-5','card-price-5')"
+                            class="card w-80 h-80 shadow-xl text-center cursor-pointer">
+                            <figure class="card-background-color w-72 h-48 m-4 rounded-sm"><img class="p-4"
+                                    src="/images/l16Briva.jpg" alt="Briva" /></figure>
+                            <div class="rating rating-md justify-center">
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <div class="card-bodytext">
+                                <h2 id="card-name-5" class="text-xl text-black font-medium">Briva</h2>
+                                <p><span id="card-price-5">75.00</span> TK</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card number 17 -->
+                    <div>
+                        <div onclick="On_Click('card-name-5','card-price-5')"
+                            class="card w-80 h-80 shadow-xl text-center cursor-pointer">
+                            <figure class="card-background-color w-72 h-48 m-4 rounded-sm"><img class="p-4"
+                                    src="/images/l17Magnesium.jpg" alt="Magnesium" /></figure>
+                            <div class="rating rating-md justify-center">
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <div class="card-bodytext">
+                                <h2 id="card-name-5" class="text-xl text-black font-medium">Magnesium</h2>
+                                <p><span id="card-price-5">65.00</span> TK</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card number 18 -->
+                    <div>
+                        <div onclick="On_Click('card-name-5','card-price-5')"
+                            class="card w-80 h-80 shadow-xl text-center cursor-pointer">
+                            <figure class="card-background-color w-72 h-48 m-4 rounded-sm"><img class="p-4"
+                                    src="/images/l18Biotin.jpg" alt="Biotin" /></figure>
+                            <div class="rating rating-md justify-center">
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <div class="card-bodytext">
+                                <h2 id="card-name-5" class="text-xl text-black font-medium">Biotin</h2>
+                                <p><span id="card-price-5">205.00</span> TK</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card number 19 -->
+                    <div>
+                        <div onclick="On_Click('card-name-5','card-price-5')"
+                            class="card w-80 h-80 shadow-xl text-center cursor-pointer">
+                            <figure class="card-background-color w-72 h-48 m-4 rounded-sm"><img class="p-4"
+                                    src="/images/l19Neocilor.jpg" alt="Neocilor" /></figure>
+                            <div class="rating rating-md justify-center">
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <div class="card-bodytext">
+                                <h2 id="card-name-5" class="text-xl text-black font-medium">Neocilor</h2>
+                                <p><span id="card-price-5">75.00</span> TK</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card number 20 -->
+                    <div>
+                        <div onclick="On_Click('card-name-5','card-price-5')"
+                            class="card w-80 h-80 shadow-xl text-center cursor-pointer">
+                            <figure class="card-background-color w-72 h-48 m-4 rounded-sm"><img class="p-4"
+                                    src="/images/l20Hunycof.jpg" alt="Hunycof" /></figure>
+                            <div class="rating rating-md justify-center">
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <div class="card-bodytext">
+                                <h2 id="card-name-5" class="text-xl text-black font-medium">Hunycof</h2>
+                                <p><span id="card-price-5">175.00</span> TK</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card number 21 -->
+                    <div>
+                        <div onclick="On_Click('card-name-5','card-price-5')"
+                            class="card w-80 h-80 shadow-xl text-center cursor-pointer">
+                            <figure class="card-background-color w-72 h-48 m-4 rounded-sm"><img class="p-4"
+                                    src="/images/21Intimate.jpg" alt="Intimate" /></figure>
+                            <div class="rating rating-md justify-center">
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <div class="card-bodytext">
+                                <h2 id="card-name-5" class="text-xl text-black font-medium">Intimate</h2>
+                                <p><span id="card-price-5">45.00</span> TK</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card number 22 -->
+                    <div>
+                        <div onclick="On_Click('card-name-5','card-price-5')"
+                            class="card w-80 h-80 shadow-xl text-center cursor-pointer">
+                            <figure class="card-background-color w-72 h-48 m-4 rounded-sm"><img class="p-4"
+                                    src="/images/l22Gasex.jpg" alt="Gasex" /></figure>
+                            <div class="rating rating-md justify-center">
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <div class="card-bodytext">
+                                <h2 id="card-name-5" class="text-xl text-black font-medium">Gasex</h2>
+                                <p><span id="card-price-5">135.00</span> TK</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card number 23 -->
+                    <div>
+                        <div onclick="On_Click('card-name-5','card-price-5')"
+                            class="card w-80 h-80 shadow-xl text-center cursor-pointer">
+                            <figure class="card-background-color w-72 h-48 m-4 rounded-sm"><img class="p-4"
+                                    src="/images/l23Criston.jpg" alt="Criston" /></figure>
+                            <div class="rating rating-md justify-center">
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <div class="card-bodytext">
+                                <h2 id="card-name-5" class="text-xl text-black font-medium">Criston</h2>
+                                <p><span id="card-price-5">155.00</span> TK</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card number 24 -->
+                    <div>
+                        <div onclick="On_Click('card-name-5','card-price-5')"
+                            class="card w-80 h-80 shadow-xl text-center cursor-pointer">
+                            <figure class="card-background-color w-72 h-48 m-4 rounded-sm"><img class="p-4"
+                                    src="/images/24Vonopa.jpg" alt="Vonopa" /></figure>
+                            <div class="rating justify-center">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"
+                                    checked="checked" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <div class="card-bodytext">
+                                <h2 id="card-name-5" class="text-xl text-black font-medium">Vonopa</h2>
+                                <p><span id="card-price-5">115.00</span> TK</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card number 25 -->
+                    <div>
+                        <div onclick="On_Click('card-name-5','card-price-5')"
+                            class="card w-80 h-80 shadow-xl text-center cursor-pointer">
+                            <figure class="card-background-color w-72 h-48 m-4 rounded-sm"><img class="p-4"
+                                    src="/images/25Nexum Mups.jpg" alt="Nexum Mups" /></figure>
+                            <div class="rating justify-center">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"
+                                    checked="checked" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <div class="card-bodytext">
+                                <h2 id="card-name-5" class="text-xl text-black font-medium">Nexum Mups</h2>
+                                <p><span id="card-price-5">65.00</span> TK</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card number 26 -->
+                    <div>
+                        <div onclick="On_Click('card-name-5','card-price-5')"
+                            class="card w-80 h-80 shadow-xl text-center cursor-pointer">
+                            <figure class="card-background-color w-72 h-48 m-4 rounded-sm"><img class="p-4"
+                                    src="/images/26OlmeCar.jpg" alt="OlmeCar" /></figure>
+                            <div class="rating rating-md justify-center">
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <div class="card-bodytext">
+                                <h2 id="card-name-5" class="text-xl text-black font-medium">OlmeCar</h2>
+                                <p><span id="card-price-5">255.00</span> TK</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+
+                <!-- Purchase bill count and coupon use section -->
+                <section class="mt-10">
+                    <!----------- Have coupon section ------------>
+                    <div class="card-background-color rounded-lg p-10 ">
+                        <h3 class="text-lg text-black mb-3 font-medium">Have coupon?</h3>
+                        <div class="border-black flex gap-0">
+                            <input id="coupon" style="border-radius: 10px 0px 0px 10px;"
+                                class="w-1/2 bg-white border-none px-2 lg:px-4 py-2" type="text"
+                                placeholder="coupon code">
+                            <button onclick="coupon()" id="coupon-btn" disabled="disabled"
+                                style="border-radius: 0px 10px 10px 0px;"
+                                class="btn border-none btn-primary px-4 py-2 text-white">Apply</button>
+                        </div>
+                    </div>
+                    <!-------------product adding section--------------->
+                    <section class="card-background-color rounded-lg lg:p-10 mt-5">
+                        <div id="Entry" class="border-b-2 p-5 text-black font-medium">
+
+                        </div>
+                        <!---------------price counting section ------------------>
+                        <div class="border-b-2 lg:p-10 text-black font-medium text-center">
+                            <h1 class="font-medium mb-3">Total price: <span id="total-price" class="ml-5">0.00</span> TK
+                            </h1>
+                            <h1 class="font-medium mb-3">Discount : <span id="diccount-price" class="ml-6">0.00</span>
+                                TK
+                            </h1>
+                            <h1 class="font-medium mb-3">Total: <span id="total" class="ml-14">0.00</span> TK</h1>
+                        </div>
+                        <div class="flex justify-center mt-10 ">
+                            <button id="Purchase-btn" disabled="disabled"
+                                class="btn border-none btn-primary text-white px-10 lg:px-20 py-2 rounded-lg"
+                                onclick="my_modal_1.showModal()">Make Purchase</button>
+                            <dialog id="my_modal_1" class="modal">
+                                <form method="dialog" class="modal-box bg-white text-black ">
+                                    <div class="flex justify-center items-center text-center">
+                                        <div class="p-10">
+                                            <img src="./images/congo.png" alt="">
+                                            <h3 class="font-bold text-lg">Congratulations</h3>
+                                            <p class="py-4 mb-5">Your Purchase the product</p>
+                                            <div>
+                                                <button onClick="window.location.reload();"
+                                                    class="btn btn-primary border-none text-white px-5 py-2 rounded-lg">Go
+                                                    Home</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </dialog>
+                        </div>
+                    </section>
+                </section>
+            </section>
+    </main>
+    <footer class="footer">
+        <aside>
+            <svg width="50" height="50" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M22.672 15.226l-2.432.811.841 2.515c.33 1.019-.209 2.127-1.23 2.456-1.15.325-2.148-.321-2.463-1.226l-.84-2.518-5.013 1.677.84 2.517c.391 1.203-.434 2.542-1.831 2.542-.88 0-1.601-.564-1.86-1.314l-.842-2.516-2.431.809c-1.135.328-2.145-.317-2.463-1.229-.329-1.018.211-2.127 1.231-2.456l2.432-.809-1.621-4.823-2.432.808c-1.355.384-2.558-.59-2.558-1.839 0-.817.509-1.582 1.327-1.846l2.433-.809-.842-2.515c-.33-1.02.211-2.129 1.232-2.458 1.02-.329 2.13.209 2.461 1.229l.842 2.515 5.011-1.677-.839-2.517c-.403-1.238.484-2.553 1.843-2.553.819 0 1.585.509 1.85 1.326l.841 2.517 2.431-.81c1.02-.33 2.131.211 2.461 1.229.332 1.018-.21 2.126-1.23 2.456l-2.433.809 1.622 4.823 2.433-.809c1.242-.401 2.557.484 2.557 1.838 0 .819-.51 1.583-1.328 1.847m-8.992-6.428l-5.01 1.675 1.619 4.828 5.011-1.674-1.62-4.829z">
+                </path>
+            </svg>
+            <p>
+                MediCart Ltd.<br />
+                Providing Support since 2024.
+            </p>
+        </aside>
+        <nav>
+            <h6 class="footer-title">Social</h6>
+            <div class="grid">
+                <a href="#" title="Twitter">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path
+                            d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z">
+                        </path>
+                    </svg>
+                </a>
+                <a href="#" title="YouTube">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path
+                            d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z">
+                        </path>
+                    </svg>
+                </a>
+                <a href="#" title="Facebook">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path
+                            d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z">
+                        </path>
+                    </svg>
+                </a>
+            </div>
+        </nav>
+    </footer>
+
+    <script src="scripts/utilities.js"></script>
+</body>
+
+</html>

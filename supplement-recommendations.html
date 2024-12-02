@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supplement Recommendations</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f3f4f6;
+            color: #333;
+        }
+
+        header {
+            background-color: #27e586;
+            color: white;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .container h2 {
+            text-align: center;
+            color: #27e586;
+            margin-bottom: 20px;
+        }
+
+        .question-card {
+            margin-bottom: 20px;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 6px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .question-card h3 {
+            font-size: 1.5rem;
+            color: #27e586;
+        }
+
+        .question-card p {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .btn-submit {
+            background-color: #27e586;
+            color: white;
+            padding: 12px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .btn-submit:hover {
+            background-color: #1f9c61;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Supplement Recommendations</h1>
+    </header>
+
+    <div class="container">
+        <h2>Find the Best Supplements for You</h2>
+        <form id="recommendationForm">
+            <div class="question-card">
+                <h3>What is your primary health goal?</h3>
+                <select id="goal" name="goal" required>
+                    <option value="immune">Boost Immunity</option>
+                    <option value="weight">Weight Loss</option>
+                    <option value="energy">Energy Boost</option>
+                    <option value="sleep">Better Sleep</option>
+                </select>
+            </div>
+
+            <div class="question-card">
+                <h3>What is your age range?</h3>
+                <select id="age" name="age" required>
+                    <option value="18-25">18-25</option>
+                    <option value="26-35">26-35</option>
+                    <option value="36-45">36-45</option>
+                    <option value="46+">46+</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn-submit">Get Supplement Recommendations</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('recommendationForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            alert('Based on your input, we recommend supplements for ' + document.getElementById('goal').value + ' and your age group.');
+        });
+    </script>
+</body>
+
+</html>

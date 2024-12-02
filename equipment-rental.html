@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Equipment Rental</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f3f4f6;
+            color: #333;
+        }
+
+        header {
+            background-color: #27e586;
+            color: white;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .container h2 {
+            text-align: center;
+            color: #27e586;
+            margin-bottom: 20px;
+        }
+
+        .equipment-card {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 6px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .equipment-card img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            margin-right: 20px;
+        }
+
+        .equipment-card .details {
+            flex: 1;
+        }
+
+        .equipment-card .btn-rent {
+            background-color: #27e586;
+            color: white;
+            padding: 10px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .equipment-card .btn-rent:hover {
+            background-color: #1f9c61;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Rent Medical Equipment</h1>
+    </header>
+
+    <div class="container">
+        <h2>Available Equipment for Rent</h2>
+
+        <div class="equipment-card">
+            <img src="wheelchair.jpg" alt="Wheelchair">
+            <div class="details">
+                <h3>Wheelchair</h3>
+                <p>Rent: $25 per day</p>
+                <button class="btn-rent">Rent Now</button>
+            </div>
+        </div>
+
+        <div class="equipment-card">
+            <img src="oxygen.jpg" alt="Oxygen Cylinder">
+            <div class="details">
+                <h3>Oxygen Cylinder</h3>
+                <p>Rent: $40 per day</p>
+                <button class="btn-rent">Rent Now</button>
+            </div>
+        </div>
+
+        <div class="equipment-card">
+            <img src="nebulizer.jpg" alt="Nebulizer">
+            <div class="details">
+                <h3>Nebulizer</h3>
+                <p>Rent: $15 per day</p>
+                <button class="btn-rent">Rent Now</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

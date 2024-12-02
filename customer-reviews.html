@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Reviews</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f3f4f6;
+            color: #333;
+        }
+
+        header {
+            background-color: #27e586;
+            color: white;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .container h2 {
+            text-align: center;
+            color: #27e586;
+            margin-bottom: 20px;
+        }
+
+        .review-card {
+            margin-bottom: 20px;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 6px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .review-card h3 {
+            color: #27e586;
+        }
+
+        .review-card p {
+            color: #555;
+        }
+
+        .review-card .rating {
+            font-size: 1.2rem;
+            color: #f39c12;
+        }
+
+        .review-card .user-info {
+            font-size: 0.9rem;
+            color: #888;
+        }
+
+        .review-form {
+            margin-top: 40px;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 6px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .review-form h3 {
+            color: #27e586;
+            margin-bottom: 20px;
+        }
+
+        .review-form label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        .review-form input,
+        .review-form textarea {
+            width: calc(100% - 20px);
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 1rem;
+            margin-bottom: 15px;
+        }
+
+        .review-form textarea {
+            resize: vertical;
+            height: 100px;
+        }
+
+        .review-form .btn-submit {
+            background-color: #27e586;
+            color: white;
+            padding: 12px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .review-form .btn-submit:hover {
+            background-color: #1f9c61;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Customer Reviews</h1>
+    </header>
+
+    <div class="container">
+        <h2>What Our Customers Say</h2>
+
+        <!-- Existing Reviews Section -->
+        <div id="reviewsContainer">
+            <div class="review-card">
+                <h3>Great Service and Quality Products!</h3>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+                <p>“I’ve been using this pharmacy for months, and the service is always quick and reliable. Highly recommend for all your medication needs.”</p>
+                <div class="user-info">By John Doe, Verified Buyer</div>
+            </div>
+
+            <div class="review-card">
+                <h3>Fast Delivery and Excellent Support</h3>
+                <div class="rating">⭐⭐⭐⭐</div>
+                <p>“The delivery was fast, and I had all my questions answered by the support team. I’m impressed with the overall experience.”</p>
+                <div class="user-info">By Jane Smith, Verified Buyer</div>
+            </div>
+
+            <div class="review-card">
+                <h3>Highly Recommended for Medicine Orders</h3>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+                <p>“The website is easy to use, and I received my order promptly. I’ll definitely be coming back for future orders.”</p>
+                <div class="user-info">By Mark T., Verified Buyer</div>
+            </div>
+        </div>
+
+        <!-- Review Submission Form -->
+        <div class="review-form">
+            <h3>Submit Your Review</h3>
+            <form id="reviewForm">
+                <div>
+                    <label for="userName">Your Name</label>
+                    <input type="text" id="userName" name="userName" placeholder="Enter your name" required>
+                </div>
+
+                <div>
+                    <label for="userRating">Rating</label>
+                    <input type="number" id="userRating" name="userRating" min="1" max="5" placeholder="Rate 1-5" required>
+                </div>
+
+                <div>
+                    <label for="userReview">Your Review</label>
+                    <textarea id="userReview" name="userReview" placeholder="Write your review here" required></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit">Submit Review</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Handle review submission
+        document.getElementById('reviewForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            // Get review details
+            const userName = document.getElementById('userName').value;
+            const userRating = document.getElementById('userRating').value;
+            const userReview = document.getElementById('userReview').value;
+
+            // Create a new review element
+            const reviewCard = document.createElement('div');
+            reviewCard.classList.add('review-card');
+
+            reviewCard.innerHTML = `
+                <h3>${userName}'s Review</h3>
+                <div class="rating">${'⭐'.repeat(userRating)}</div>
+                <p>“${userReview}”</p>
+                <div class="user-info">By ${userName}, Verified Buyer</div>
+            `;
+
+            // Append new review to the container
+            document.getElementById('reviewsContainer').appendChild(reviewCard);
+
+            // Reset form
+            document.getElementById('reviewForm').reset();
+        });
+    </script>
+</body>
+
+</html>

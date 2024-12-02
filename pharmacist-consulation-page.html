@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharmacist Consultation</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f3f4f6;
+            color: #333;
+        }
+
+        header {
+            background-color: #27e586;
+            color: white;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .container h2 {
+            text-align: center;
+            color: #27e586;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: calc(100% - 20px);
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 1rem;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            height: 100px;
+        }
+
+        .btn-submit {
+            background-color: #27e586;
+            color: white;
+            padding: 12px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .btn-submit:hover {
+            background-color: #1f9c61;
+        }
+
+        .faq {
+            margin-top: 30px;
+        }
+
+        .faq h3 {
+            font-size: 1.5rem;
+            color: #27e586;
+        }
+
+        .faq p {
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Pharmacist Consultation</h1>
+    </header>
+
+    <div class="container">
+        <h2>Consult with a Pharmacist</h2>
+        <form id="consultationForm">
+            <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="question">Your Question</label>
+                <textarea id="question" name="question"
+                    placeholder="Describe your query (e.g., medication guidance, side effects, etc.)" required></textarea>
+            </div>
+            <button type="submit" class="btn-submit">Submit Query</button>
+        </form>
+
+        <div class="faq">
+            <h3>Frequently Asked Questions</h3>
+            <p><strong>Q: How long does it take to receive a response?</strong><br> A: Our pharmacists typically respond
+                within 24 hours.</p>
+            <p><strong>Q: Can I ask about drug interactions?</strong><br> A: Yes, feel free to ask about any concerns
+                related to drug interactions or side effects.</p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('consultationForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            alert('Thank you! Your question has been submitted. Our pharmacist will contact you shortly.');
+        });
+    </script>
+</body>
+
+</html>
